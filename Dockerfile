@@ -73,9 +73,6 @@ RUN apt-get install -y \
   nginx \
   supervisor
 
-# Install latest rails
-RUN /bin/bash -l -c 'gem install rails'
-
 # Run nginx in foreground
 # RUN echo "daemon off;\n" >> /etc/nginx/nginx.conf
 # ADD supervisor.conf /etc/supervisor/conf.d/nginx.conf
